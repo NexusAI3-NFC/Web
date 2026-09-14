@@ -209,6 +209,26 @@
   .service-card.c-teal li svg{color:var(--teal);}
   .service-card.c-gold li svg{color:var(--gold);}
 
+  .service-card.spotlight{
+    background:linear-gradient(160deg, var(--ink-softer), var(--ink-soft));
+    transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+  }
+  .service-card.spotlight:hover{ transform:translateY(-6px); box-shadow:0 24px 50px rgba(0,0,0,.4); border-color:rgba(244,239,228,0.22); }
+  .service-glow{
+    position:absolute; width:280px; height:280px; border-radius:50%; filter:blur(70px);
+    opacity:.25; top:-90px; right:-70px; pointer-events:none; transition:opacity .35s ease;
+  }
+  .service-card.spotlight:hover .service-glow{ opacity:.45; }
+  .service-icon{
+    width:60px; height:60px; border-radius:16px; display:flex; align-items:center; justify-content:center;
+    margin-bottom:20px; position:relative;
+  }
+  .service-icon svg{ width:28px; height:28px; }
+  .service-badge{
+    position:absolute; top:26px; right:26px; font-family:var(--mono); font-size:11px; font-weight:800;
+    letter-spacing:.06em; text-transform:uppercase; padding:6px 13px; border-radius:20px;
+  }
+
   /* ---------- NFC PRODUCTS ---------- */
   .products-sub{ display:flex; align-items:baseline; justify-content:space-between; gap:20px; margin:0 0 26px; }
   .products-sub h3{ font-family:var(--sans); font-size:19px; font-weight:800; }
@@ -328,7 +348,20 @@
     font-family:var(--mono);
   }
 
-  /* ---------- FAQ ---------- */
+    .price-card{ position:relative; overflow:hidden; transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
+  .price-card:hover{ transform:translateY(-6px); box-shadow:0 24px 50px rgba(0,0,0,.4); }
+  .price-glow{
+    position:absolute; width:220px; height:220px; border-radius:50%; filter:blur(64px);
+    opacity:.22; top:-70px; right:-60px; pointer-events:none; transition:opacity .35s ease;
+  }
+  .price-card:hover .price-glow{ opacity:.4; }
+  .price-icon{
+    width:54px; height:54px; border-radius:14px; display:flex; align-items:center; justify-content:center;
+    margin-bottom:18px; position:relative;
+  }
+  .price-icon svg{ width:26px; height:26px; }
+
+/* ---------- FAQ ---------- */
   .faq-item{border-bottom:1px solid var(--line);}
   .faq-q{
     width:100%; background:none; border:none; color:var(--paper);
@@ -474,7 +507,10 @@
         <p>Vídeos, historias y contenido listo para publicar cada mes, para que Instagram o TikTok no se queden parados mientras vosotros lleváis el negocio.</p>
       </div>
 
-      <div class="service-card c-teal reveal" style="max-width:640px;">
+      <div class="service-card c-teal spotlight reveal" style="max-width:640px;">
+        <div class="service-badge" style="background:rgba(31,158,140,0.16);color:#1F9E8C;">Servicio mensual</div>
+        <div class="service-glow" style="background:#1F9E8C;"></div>
+        <div class="service-icon" style="background:rgba(31,158,140,0.16);color:#1F9E8C;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><polygon points="10 8 16 12 10 16" fill="currentColor" stroke="none"></polygon></svg></div>
         <div class="service-tag">Redes sociales</div>
         <h3>Contenido en vídeo, cada mes</h3>
         <ul>
@@ -498,6 +534,8 @@
 
       <div class="pricing-grid">
         <div class="price-card reveal">
+          <div class="price-glow" style="background:#E8B93D;"></div>
+          <div class="price-icon" style="background:rgba(232,185,61,0.16);color:#E8B93D;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></div>
           <div class="price-name">Menú digital</div>
           <div class="price-amount">Desde 350€</div>
           <p class="price-desc">Carta digital personalizada para vuestro restaurante, con vuestra marca.</p>
@@ -511,6 +549,8 @@
         </div>
 
         <div class="price-card featured reveal">
+          <div class="price-glow" style="background:#1F9E8C;"></div>
+          <div class="price-icon" style="background:rgba(31,158,140,0.16);color:#1F9E8C;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><circle cx="7" cy="6.5" r="0.6" fill="currentColor" stroke="none"></circle><circle cx="10" cy="6.5" r="0.6" fill="currentColor" stroke="none"></circle></svg></div>
           <div class="price-name">Web a medida</div>
           <div class="price-amount">Desde 350€</div>
           <p class="price-desc">Sitio completo, diseño propio, listo para vender.</p>
@@ -525,6 +565,8 @@
         </div>
 
         <div class="price-card reveal">
+          <div class="price-glow" style="background:#C6703C;"></div>
+          <div class="price-icon" style="background:rgba(198,112,60,0.16);color:#C6703C;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><polygon points="10 8 16 12 10 16" fill="currentColor" stroke="none"></polygon></svg></div>
           <div class="price-name">Redes sociales</div>
           <div class="price-amount">150€<span>/mes</span></div>
           <p class="price-desc">Contenido en vídeo listo para publicar, mes a mes.</p>

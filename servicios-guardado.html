@@ -50,3 +50,43 @@
       </div>
     </div>
   </section>
+
+
+<!-- ============================================================
+  SECCION "HERO" (portada con mensaje de Automatizacion)
+  Guardada aqui el 2026-09-14 porque de momento
+  no se ofrecen automatizaciones. Quitada de index.html (era la primera
+  seccion dentro de <main>, justo antes de <!-- TARJETAS NFC -->).
+  Incluye el texto "Automatizamos lo repetitivo...", la terminal animada
+  y las estadisticas (5-10 dias, 100%, 1 equipo).
+  Para volver a ponerla: pegar el bloque de abajo dentro de <main>, como
+  primera seccion (antes de <!-- TARJETAS NFC -->). El script de la
+  terminal (busca "termBody" en el <script>) ya tiene un fallback seguro
+  que no rompe nada si esta seccion no esta presente; se puede dejar así
+  cuando se restaure, no hace falta deshacerlo.
+============================================================ -->
+
+<!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Automatización · Web · Mantenimiento</div>
+        <h1>Automatizamos lo repetitivo.<br>Construimos <em>lo importante</em>.</h1>
+        <p class="lead">Un mismo equipo para quitaros tareas de encima, levantar una web que venda de verdad, y mantenerla viva después. Sin depender de tres proveedores distintos.</p>
+        <div class="hero-ctas">
+          <a href="#contacto" class="btn btn-primary">Pide tu diagnóstico gratis</a>
+          <a href="#proceso" class="btn btn-ghost">Ver cómo trabajamos</a>
+        </div>
+        <div class="hero-trio">
+          <div><b>5–10 días</b>primera automatización activa</div>
+          <div><b>100%</b>a vuestro ritmo, sin permanencia</div>
+          <div><b>1 equipo</b>para todo lo digital</div>
+        </div>
+      </div>
+
+      <div class="terminal">
+        <div class="terminal-bar"><span></span><span></span><span></span><em>nexus — automatización activa</em></div>
+        <div class="terminal-body" id="termBody"><div class="line cmd">$ nexus run booking-bot</div><div class="line">→ conectando WhatsApp Business...</div><div class="line">→ sincronizando Google Calendar...</div><div class="line ok">✓ bot activo — 3 citas agendadas mientras dormías</div></div>
+      </div>
+    </div>
+  </section>

@@ -133,6 +133,8 @@
   .slide-info p{ font-size:16px; color:var(--paper-dim); max-width:440px; margin-bottom:22px; }
   .slide-badges{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:26px; }
   .slide-badge{ font-family:var(--mono); font-size:11.5px; padding:6px 11px; border:1px solid var(--line); border-radius:20px; color:var(--paper-dim); }
+  .slide-price{ font-family:var(--mono); font-weight:800; font-size:30px; color:var(--teal); margin-bottom:22px; }
+  .slide-price span{ font-size:14px; color:var(--slate); font-weight:500; margin-left:4px; }
   .slide-ctas{ display:flex; gap:12px; }
 
   /* arrows */
@@ -360,6 +362,7 @@
       tagline: 'Expositor acrílico en L, se mantiene de pie solo. Para mostrador, mesas y escaparate.',
       badges: ['Sin pilas ni wifi', 'iPhone y Android', 'Listo para usar'],
       img: 'assets/stand-1.png',
+      price: '24€',
       specs: [
         ['Material', 'Acrílico rígido transparente'],
         ['Medidas aprox.', '10 × 15 cm, base en L'],
@@ -373,6 +376,7 @@
       tagline: 'Placa adhesiva con NFC y QR, alta durabilidad. Se pega en cristal, pared o caja.',
       badges: ['Adhesivo permanente', 'Exterior e interior', 'A prueba de roces'],
       img: 'assets/pegatina-1.png',
+      price: '10€',
       
       specs: [
         ['Material', 'Vinilo laminado resistente al agua'],
@@ -387,6 +391,7 @@
       tagline: 'Tarjeta NFC tamaño cartera. Se acerca a la mesa junto con la cuenta.',
       badges: ['Tamaño tarjeta bancaria', 'Va en cualquier bolsillo', 'Ideal para reparto'],
       img: 'assets/tarjeta-1.png',
+      price: '15€',
       
       specs: [
         ['Material', 'PVC rígido, acabado tipo tarjeta'],
@@ -439,6 +444,7 @@
       tagline: 'La misma tarjeta en blanco — vosotros elegís qué hace: ficha de contacto, redes sociales, vuestra web o un enlace especial.',
       badges: ['Contacto', 'Redes sociales', 'Tu web', 'Link especial'],
       img: 'assets/personalizada-1.png',
+      price: '25€',
       specs: [
         ['Material', 'PVC rígido, acabado tipo tarjeta'],
         ['Medidas', '8.5 × 5.4 cm (tamaño estándar)'],
@@ -452,6 +458,7 @@
       tagline: 'Vuestra carta siempre actualizada, con opción de pedir la cuenta desde la mesa. El diseño y el alcance se ajustan a lo que necesitéis.',
       badges: ['Carta digital', 'Pedir cuenta', 'Editable'],
       img: 'assets/menu-1.png',
+      price: '15€', priceNote: '+ menú digital incluido',
       specs: [
         ['Formato', 'Tarjeta o expositor, a elegir'],
         ['Tecnología', 'Chip NFC + código QR impreso'],
@@ -501,6 +508,7 @@
           <div class="slide-tag">${p.tag}</div>
           <h1>${p.name}</h1>
           <p>${p.tagline}</p>
+          <div class="slide-price">${p.price}${p.priceNote ? ` <span>${p.priceNote}</span>` : ''}</div>
           <div class="slide-badges">${p.badges.map(b => `<span class="slide-badge">${b}</span>`).join('')}</div>
           <div class="slide-ctas">
             <a href="index.html#contacto" class="btn btn-primary">Pedir esta tarjeta</a>

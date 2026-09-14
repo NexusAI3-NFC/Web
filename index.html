@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nexus — Automatización, webs y mantenimiento para pymes</title>
-<meta name="description" content="NexusWeb AI: automatizamos tareas repetitivas, construimos webs que venden y las mantenemos vivas. Todo desde un mismo equipo.">
+<title>Nexus — Webs y mantenimiento para pymes</title>
+<meta name="description" content="NexusWeb AI: construimos webs que venden y las mantenemos vivas. Todo desde un mismo equipo.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -406,31 +406,7 @@
 
 <main id="top">
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <div class="eyebrow">Automatización · Web · Mantenimiento</div>
-        <h1>Automatizamos lo repetitivo.<br>Construimos <em>lo importante</em>.</h1>
-        <p class="lead">Un mismo equipo para quitaros tareas de encima, levantar una web que venda de verdad, y mantenerla viva después. Sin depender de tres proveedores distintos.</p>
-        <div class="hero-ctas">
-          <a href="#contacto" class="btn btn-primary">Pide tu diagnóstico gratis</a>
-          <a href="#proceso" class="btn btn-ghost">Ver cómo trabajamos</a>
-        </div>
-        <div class="hero-trio">
-          <div><b>5–10 días</b>primera automatización activa</div>
-          <div><b>100%</b>a vuestro ritmo, sin permanencia</div>
-          <div><b>1 equipo</b>para todo lo digital</div>
-        </div>
-      </div>
-
-      <div class="terminal">
-        <div class="terminal-bar"><span></span><span></span><span></span><em>nexus — automatización activa</em></div>
-        <div class="terminal-body" id="termBody"><div class="line cmd">$ nexus run booking-bot</div><div class="line">→ conectando WhatsApp Business...</div><div class="line">→ sincronizando Google Calendar...</div><div class="line ok">✓ bot activo — 3 citas agendadas mientras dormías</div></div>
-      </div>
-    </div>
-  </section>
-
+  
   
   <!-- TARJETAS NFC -->
   <section id="tarjetas" style="background:var(--ink-soft); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
@@ -695,7 +671,7 @@
     ],
   ];
 
-  const termBody = document.getElementById('termBody');
+  const termBody = document.getElementById('termBody') || document.createElement('div');
   let sIdx = 0;
 
   function typeLine(line, container, cb){

@@ -36,7 +36,7 @@
   header.nav{ position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(20,17,13,0.88); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
   .nav-inner{ max-width:var(--maxw); margin:0 auto; padding:16px 32px; display:flex; align-items:center; justify-content:space-between; }
   .brand{display:flex; align-items:center; gap:10px;}
-  .brand svg{width:30px; height:30px;}
+  .brand img{width:30px; height:30px; border-radius:7px; display:block;}
   .brand span{font-family:var(--mono); font-weight:800; font-size:18px;}
   .back-link{ font-size:13.5px; color:var(--paper-dim); display:flex; align-items:center; gap:6px; }
   .back-link:hover{ color:var(--paper); }
@@ -222,7 +222,7 @@
 <header class="nav">
   <div class="nav-inner">
     <a href="index.html#top" class="brand">
-      <svg viewBox="0 0 400 400"><rect width="400" height="400" rx="72" fill="#14110D"/><line x1="108" y1="108" x2="292" y2="292" stroke="#C6703C" stroke-width="42" stroke-linecap="round"/><line x1="292" y1="108" x2="108" y2="292" stroke="#C6703C" stroke-width="42" stroke-linecap="round"/><circle cx="108" cy="108" r="27" fill="#C6703C"/><circle cx="292" cy="108" r="27" fill="#C6703C"/><circle cx="108" cy="292" r="27" fill="#C6703C"/><circle cx="292" cy="292" r="27" fill="#C6703C"/><circle cx="200" cy="200" r="33" fill="#C6703C"/></svg>
+      <img src="assets/nav-logo.png" alt="Nexus" width="30" height="30">
       <span>nexus</span>
     </a>
     <a href="index.html#tarjetas" class="back-link">← Volver a Tarjetas NFC</a>

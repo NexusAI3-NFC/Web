@@ -296,9 +296,7 @@
   /* ---------- PRICING ---------- */
   .pricing-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px; align-items:stretch;}
   @media (max-width:900px){ .pricing-grid{grid-template-columns:1fr;} }
-    .price-card:nth-child(4){ grid-column:2; }
-  @media (max-width:900px){ .price-card:nth-child(4){ grid-column:auto; } }
-  .price-card{
+    .price-card{
     background:var(--ink-soft); border:1px solid var(--line); border-radius:var(--radius);
     padding:34px 28px; display:flex; flex-direction:column;
   }
@@ -500,20 +498,20 @@
 
       <div class="pricing-grid">
         <div class="price-card reveal">
-          <div class="price-name">Pack automatización</div>
+          <div class="price-name">Menú digital</div>
           <div class="price-amount price-amount-cta">A medida</div>
-          <p class="price-desc">Una tarea repetitiva, resuelta y funcionando en una semana.</p>
+          <p class="price-desc">Carta digital personalizada para vuestro restaurante, con vuestra marca.</p>
           <ul>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Bot de WhatsApp, facturación o reseñas</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Integración con lo que ya usáis</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Entrega en 5–7 días</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> 30 días de ajustes incluidos</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Diseño personalizado con vuestra marca</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Carta siempre actualizada, sin reimprimir</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Opción de pedir la cuenta desde la mesa</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Incluye tarjeta o expositor NFC</li>
           </ul>
           <a href="#contacto" class="btn btn-ghost btn-block">Pedir presupuesto</a>
         </div>
 
         <div class="price-card featured reveal">
-          <div class="price-name">Web para pyme</div>
+          <div class="price-name">Web a medida</div>
           <div class="price-amount price-amount-cta">A medida</div>
           <p class="price-desc">Sitio completo, diseño propio, listo para vender.</p>
           <ul>
@@ -527,19 +525,6 @@
         </div>
 
         <div class="price-card reveal">
-          <div class="price-name">Mantenimiento</div>
-          <div class="price-amount price-amount-cta">A medida</div>
-          <p class="price-desc">Tranquilidad cada mes, sin sorpresas.</p>
-          <ul>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Copias de seguridad semanales</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Actualizaciones de seguridad</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Cambios de contenido incluidos</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Soporte por WhatsApp</li>
-          </ul>
-          <a href="#contacto" class="btn btn-ghost btn-block">Pedir presupuesto</a>
-        </div>
-      
-        <div class="price-card reveal">
           <div class="price-name">Redes sociales</div>
           <div class="price-amount">150€<span>/mes</span></div>
           <p class="price-desc">Contenido en vídeo listo para publicar, mes a mes.</p>
@@ -551,7 +536,7 @@
           </ul>
           <a href="#contacto" class="btn btn-ghost btn-block">Pedir presupuesto</a>
         </div>
-</div>
+      </div>
 
       <p class="pricing-note">Respondemos con precio cerrado en menos de 24h. Algunos servicios pueden financiarse con el Kit Digital si sois autónomo o pyme — preguntadnos si os interesa.</p>
     </div>

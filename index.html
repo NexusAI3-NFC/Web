@@ -857,6 +857,8 @@
   var splash = document.getElementById('intro-splash');
   var vid = document.getElementById('intro-video');
   if(!splash || !vid){ return; }
+  var sbw = window.innerWidth - document.documentElement.clientWidth;
+  if(sbw > 0){ document.body.style.paddingRight = sbw + 'px'; }
   document.body.classList.add('intro-active');
   var done = false;
   function finish(){
@@ -864,6 +866,7 @@
     done = true;
     splash.classList.add('intro-hide');
     document.body.classList.remove('intro-active');
+    document.body.style.paddingRight = '';
     setTimeout(function(){ splash.remove(); }, 600);
   }
   vid.addEventListener('ended', finish);
